@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversions</title>
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<div id="container">
+
+    <div id="f-container">
+        <h1>Fahrenheit to Celsius Converter</h1>
+        <form id="f-to-c">
+          <label for="fahrenheit-input">Temperature in Fahrenheit</label>
+          <input id="fahrenheit-input" type="number">
+          <button id="f-button" type="submit">Calculate</button>
+
+          <p id="celsius-output">Temperature in Celsius: </p>
+        </form>
+    </div>
+
+    <div id="c-container">
+        <h1>Celsius to Fahrenheit Converter</h1>
+        <form id="c-to-f">
+          <label for="celsius-input">Temperature in Celsius</label>
+          <input id="celsius-input" type="number">
+          <button id="c-button" type="submit">Calculate</button>
+
+          <p id="fahrenheit-output">Temperature in Fahrenheit: </p>
+        </form>
+    </div>
+    <div id="data-conversions">
+        <h1>Data Converter</h1>
+
+        <label for="data-input">Data Size Input</label>
+        <input id="data-input" type="number">
+        </br>
+        <label for="data-type-input">Data Type</label>
+        <select id="data-type-input">
+            <option value="b">Byte</option>
+            <option value="kb">Kilobyte</option>
+            <option value="mb">Megabyte</option>
+            <option value="gb">Gigabyte</option>
+            <option value="tb">Terabyte</option>
+            <option value="pb">Petabyte</option>
+        </select>
+
+        <br/>
+        <p id="data-output">Data Size Output: </p>
+        <label for="data-type-output">Data Type</label>
+        <select id="data-type-output">
+            <option value="b">Byte</option>
+            <option value="kb">Kilobyte</option>
+            <option value="mb">Megabyte</option>
+            <option value="gb">Gigabyte</option>
+            <option value="tb">Terabyte</option>
+            <option value="pb">Petabyte</option>
+        </select>
+
+    </div>
+
+</div>
+<script type="module" src="js/index.mjs"></script>
+</body>
+</html>
