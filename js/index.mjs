@@ -5,8 +5,9 @@ function init()
         .addEventListener('submit', (e) =>
         {
             e.preventDefault();
+
             document.getElementById('celsius-output')
-                .textContent += String(fahrenheitCelsiusConversion() + '\xB0C');
+                .textContent = 'Temperature in Celsius: ' + String(fahrenheitCelsiusConversion() + '\xB0C');
         });
 
     document.getElementById('f-button')
@@ -14,7 +15,7 @@ function init()
         {
             e.preventDefault();
             document.getElementById('celsius-output')
-                .textContent += String(fahrenheitCelsiusConversion() + '\xB0C');
+                .textContent = 'Temperature in Celsius: ' + String(fahrenheitCelsiusConversion() + '\xB0C');
         });
 
 
@@ -24,7 +25,7 @@ function init()
         {
             e.preventDefault();
             document.getElementById('fahrenheit-output')
-                .textContent += String(celsiusFahrenheitConversion() + '\xB0F');
+                .textContent = 'Temperature in Fahrenheit: ' + String(celsiusFahrenheitConversion() + '\xB0F');
         });
 
     document.getElementById('c-button')
@@ -32,7 +33,7 @@ function init()
         {
             e.preventDefault();
             document.getElementById('fahrenheit-output')
-                .textContent += String(celsiusFahrenheitConversion() + '\xB0F');
+                .textContent = 'Temperature in Fahrenheit: ' + String(celsiusFahrenheitConversion() + '\xB0F');
         });
 
     // Data Conversion Listeners

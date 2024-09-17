@@ -4,64 +4,68 @@
     <meta charset="UTF-8">
     <title>Conversions</title>
 
-    <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
 
-<div id="container">
 
-    <div id="f-container">
-        <h1>Fahrenheit to Celsius Converter</h1>
-        <form id="f-to-c">
-          <label for="fahrenheit-input">Temperature in Fahrenheit</label>
-          <input id="fahrenheit-input" type="number">
-          <button id="f-button" type="submit">Calculate</button>
+<div id="f-container">
+    <h1>Fahrenheit to Celsius Converter</h1>
+    <form id="f-to-c">
+      <label for="fahrenheit-input">Temperature in Fahrenheit</label>
+      <input id="fahrenheit-input" type="number">
 
-          <p id="celsius-output">Temperature in Celsius: </p>
-        </form>
-    </div>
+      <button id="f-button" type="submit" class="btn btn-primary" style="--bs-btn-padding-y: .15rem">Calculate</button>
 
-    <div id="c-container">
-        <h1>Celsius to Fahrenheit Converter</h1>
-        <form id="c-to-f">
-          <label for="celsius-input">Temperature in Celsius</label>
-          <input id="celsius-input" type="number">
-          <button id="c-button" type="submit">Calculate</button>
-
-          <p id="fahrenheit-output">Temperature in Fahrenheit: </p>
-        </form>
-    </div>
-    <div id="data-conversions">
-        <h1>Data Converter</h1>
-
-        <label for="data-input">Data Size Input</label>
-        <input id="data-input" type="number">
-        </br>
-        <label for="data-type-input">Data Type</label>
-        <select id="data-type-input">
-            <option value="b">Byte</option>
-            <option value="kb">Kilobyte</option>
-            <option value="mb">Megabyte</option>
-            <option value="gb">Gigabyte</option>
-            <option value="tb">Terabyte</option>
-            <option value="pb">Petabyte</option>
-        </select>
-
-        <br/>
-        <p id="data-output">Data Size Output: </p>
-        <label for="data-type-output">Data Type</label>
-        <select id="data-type-output">
-            <option value="b">Byte</option>
-            <option value="kb">Kilobyte</option>
-            <option value="mb">Megabyte</option>
-            <option value="gb">Gigabyte</option>
-            <option value="tb">Terabyte</option>
-            <option value="pb">Petabyte</option>
-        </select>
-
-    </div>
-
+      <p id="celsius-output">Temperature in Celsius: </p>
+    </form>
 </div>
+
+<div id="c-container">
+    <h1>Celsius to Fahrenheit Converter</h1>
+    <form id="c-to-f">
+      <label for="celsius-input">Temperature in Celsius</label>
+      <input id="celsius-input" type="number">
+      <button id="c-button" type="submit" class="btn btn-primary" style="--bs-btn-padding-y: .15rem">Calculate</button>
+
+      <p id="fahrenheit-output">Temperature in Fahrenheit: </p>
+    </form>
+</div>
+
+<div id="data-conversions">
+    <h1>Data Converter</h1>
+
+    <label for="data-input">Data Size Input</label>
+    <input id="data-input" type="number" class="my-3">
+
+    <label>
+        <select id="data-type-input">
+            <option selected disabled hidden>Select a Data Type</option>
+            <option value="b">Byte</option>
+            <option value="kb">Kilobyte</option>
+            <option value="mb">Megabyte</option>
+            <option value="gb">Gigabyte</option>
+            <option value="tb">Terabyte</option>
+            <option value="pb">Petabyte</option>
+        </select>
+    </label>
+
+    <p id="data-output">Data Size Output: </p>
+
+    <label>
+        <select id="data-type-output">
+            <option selected disabled hidden>Select a Data Type</option>
+            <option value="b">Byte</option>
+            <option value="kb">Kilobyte</option>
+            <option value="mb">Megabyte</option>
+            <option value="gb">Gigabyte</option>
+            <option value="tb">Terabyte</option>
+            <option value="pb">Petabyte</option>
+        </select>
+    </label>
+</div>
+
 <script type="module" src="js/index.mjs"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
